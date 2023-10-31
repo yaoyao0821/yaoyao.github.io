@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
@@ -18,6 +18,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^5.12.4",
+    "gatsby-plugin-cname": "^1.0.0",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-mdx": "^5.12.3",

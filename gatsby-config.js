@@ -9,7 +9,7 @@ module.exports = {
   pathPrefix: '/yaoyao.github.io',
   siteMetadata: {
     title: `Yaoyao's site`,
-    siteUrl: `https://www.yaoyao.com`,
+    siteUrl: `https://yaoyao.github.io`,
     ...siteConfig,
     ...navConfig,
   },
@@ -63,5 +63,6 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
+    'gatsby-plugin-cname',
 ]
 };
