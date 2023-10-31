@@ -72,7 +72,7 @@ const DefaultLayout = ({data, children, bodyClass, isHome }) => {
                                 >
                                     <img
                                         className="site-nav-icon"
-                                        src= "/images/icons/linkedin.svg"
+                                        src= {`${withPrefix('/images/icons/linkedin.svg')}`}
                                         alt="LinkedIn icon"
                                     />
                                     LinkedIn
