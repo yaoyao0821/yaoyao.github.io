@@ -6,6 +6,7 @@ const siteConfig = require(`./src/data/siteConfig`);
 const navConfig = require(`./src/data/navConfig`);
 
 module.exports = {
+  pathPrefix: '/',
   siteMetadata: {
     title: `Yaoyao's site`,
     siteUrl: `https://www.yaoyao.com`,
