@@ -1,0 +1,17 @@
+.blog-item {
+    /* margin-bottom: ${rhythm(1 / 4)}; */
+    /* margin-bottom: "600px" */
+    margin: 0 0 0.8em 0
+}
+
+.blog-time {
+    /* margin: 0.5em 0 0.2em 0;
+    font-size: 2.4rem;
+    font-weight: 700; */
+    color: #bbb;
+}
+
+.blog-link {
+    text-decoration: none;
+    color: blue;
+}
