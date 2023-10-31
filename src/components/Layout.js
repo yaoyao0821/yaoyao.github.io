@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link, useStaticQuery, graphql, withPrefix } from "gatsby";
 // import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Navigation } from ".";
@@ -16,7 +16,6 @@ import "../styles/app.css";
  * styles, and meta data for each page.
  *
  */
-const staticPath = '../../images/icons'
 const DefaultLayout = ({data, children, bodyClass, isHome }) => {
     const site = data.site.siteMetadata;
 
@@ -34,7 +33,7 @@ const DefaultLayout = ({data, children, bodyClass, isHome }) => {
                 <header
                     className="site-head"
                     style={{
-                        backgroundImage: `url("/images/bg.jpg")`,
+                        backgroundImage: `url(${withPrefix('/images/bg.jpg')}`,
                     }}
                 >
                     <div className="container">
@@ -43,7 +42,7 @@ const DefaultLayout = ({data, children, bodyClass, isHome }) => {
                                 <Link to="/">
                                     <img
                                         className="site-nav-icon"
-                                        src="/images/icons/home.svg"
+                                        src={`${withPrefix('/images/icons/home.svg')}`}
                                         alt="home icon"
                                     />
                                     <span> Home </span>
@@ -59,7 +58,7 @@ const DefaultLayout = ({data, children, bodyClass, isHome }) => {
                                 >
                                     <img
                                         className="site-nav-icon"
-                                        src="/images/icons/github.svg"
+                                        src={`${withPrefix('/images/icons/github.svg')}`}
                                         alt="github icon"
                                     />
                                     GitHub
@@ -88,9 +87,9 @@ const DefaultLayout = ({data, children, bodyClass, isHome }) => {
                                 >
                                     <img
                                         className="site-nav-icon"
-                                        src="/images/icons/email.png"
+                                        src={`${withPrefix('/images/icons/email.png')}`}
                                         alt="Email"
-                                    />
+                                    /> 
                                     Email
                                 </a>
                             </div>
@@ -102,7 +101,7 @@ const DefaultLayout = ({data, children, bodyClass, isHome }) => {
                                  >
                                     <img
                                         className="name-logo"
-                                        src= "/images/icons/logo_trans.png"
+                                        src={`${withPrefix('/images/icons/logo_trans.png')}`}
                                         alt="logo icon"
                                     />
                                         {site.title}

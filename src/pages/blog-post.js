@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, withPrefix } from "gatsby";
 import { Layout } from "../components";
 
 /**
@@ -14,17 +14,9 @@ const BlogPost = ({ data }) => {
             <Layout>
             <div className="container">
                     <article className="content">
-                        {/* {blog ? (
-                            <figure className="post-feature-image">
-                                <img
-                                    src={blog?.feature_image}
-                                    alt={blog?.frontmatter.title}
-                                />
-                            </figure>
-                        ) : null} */}
                         <section className="post-full-content">
                             <h1 className="content-title">
-                                <img src="/images/icons/blog.svg"/>
+                                <img src={`${withPrefix('/images/icons/blog.svg')}`}/>
                                 {blog?.frontmatter.title}
                             </h1>
 
